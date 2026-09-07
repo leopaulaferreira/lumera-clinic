@@ -4,6 +4,8 @@ import CancelAppointment from "../components/CancelAppointment";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
+import { useScrollReveal } from "../hooks/useScrollReveal";
+
 import {
     professionals,
     services,
@@ -16,6 +18,8 @@ import {
 } from "../utils/format";
 
 function HomePage({ onCancel }) {
+    useScrollReveal();
+
     return (
         <>
             <Header />
@@ -108,7 +112,7 @@ function HomePage({ onCancel }) {
                     className="section intro"
                     id="experiencia"
                 >
-                    <div className="shell intro-grid">
+                    <div className="shell intro-grid reveal">
                         <div>
               <span className="eyebrow">
                 A experiência Luméra
@@ -174,7 +178,7 @@ function HomePage({ onCancel }) {
                     id="tratamentos"
                 >
                     <div className="shell">
-                        <div className="section-heading">
+                        <div className="section-heading reveal">
                             <div>
                 <span className="eyebrow">
                   Tratamentos
@@ -231,7 +235,7 @@ function HomePage({ onCancel }) {
                 </section>
 
                 <section className="section technology">
-                    <div className="shell technology-grid">
+                    <div className="shell technology-grid reveal">
                         <div className="technology-photo" />
 
                         <div>
@@ -290,7 +294,7 @@ function HomePage({ onCancel }) {
                     id="equipe"
                 >
                     <div className="shell">
-                        <div className="section-heading centered">
+                        <div className="section-heading centered reveal">
                             <div>
                 <span className="eyebrow">
                   Especialistas
@@ -332,7 +336,7 @@ function HomePage({ onCancel }) {
 
                 <section className="section testimonials">
                     <div className="shell">
-                        <div className="section-heading">
+                        <div className="section-heading reveal">
                             <div>
                 <span className="eyebrow light">
                   Experiências
@@ -362,7 +366,7 @@ function HomePage({ onCancel }) {
                     className="section booking-section"
                     id="contato"
                 >
-                    <div className="shell booking-grid">
+                    <div className="shell booking-grid reveal">
                         <div>
               <span className="eyebrow">
                 Sua jornada começa aqui
