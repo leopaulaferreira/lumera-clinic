@@ -637,8 +637,29 @@ input:focus, textarea:focus, select:focus {
     box-shadow:0 0 0 4px rgba(212,177,126,.14)
 }
 .form-message {
-    color:var(--gold-dark)!important;
-    font-weight:700
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border-radius:10px;
+    padding:12px 14px;
+    color:var(--gold-dark);
+    background:rgba(212,177,126,.14);
+    font-weight:700;
+    font-size:.85rem
+}
+.form-message.success {
+    color:#2f6a4f;
+    background:rgba(66,138,105,.14)
+}
+.form-message.success:before {
+    content:"✓"
+}
+.form-message.error {
+    color:#a4402f;
+    background:rgba(196,79,58,.12)
+}
+.form-message.error:before {
+    content:"✕"
 }
 /* =========================================================
    RODAPÉ
