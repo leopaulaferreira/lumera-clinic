@@ -207,12 +207,14 @@ function HomePage({ onCancel }) {
                                     className="service-card"
                                     key={service.id}
                                 >
-                                    <div
-                                        className="service-image"
-                                        style={{
-                                            backgroundImage: `url("${service.image}")`,
-                                        }}
-                                    >
+                                    <div className="service-image">
+                                        <img
+                                            src={service.image}
+                                            alt={service.name}
+                                            loading="lazy"
+                                            decoding="async"
+                                        />
+
                                         <span>{service.category}</span>
                                     </div>
 
@@ -314,11 +316,12 @@ function HomePage({ onCancel }) {
                                     className="team-card"
                                     key={professional.id}
                                 >
-                                    <div
+                                    <img
                                         className="team-photo"
-                                        style={{
-                                            backgroundImage: `url("${professional.image}")`,
-                                        }}
+                                        src={professional.image}
+                                        alt={professional.name}
+                                        loading="lazy"
+                                        decoding="async"
                                     />
 
                                     <div className="team-content">
