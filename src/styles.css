@@ -14,7 +14,8 @@
     --paper:#fffdf9;
     --gold:#d4b17e;
     --gold-dark:#a98251;
-    --muted:#6d7771;
+    --gold-text:#876840;
+    --muted:#626b65;
     --line:rgba(29,41,36,.13);
     --shadow:0 24px 70px rgba(29,41,36,.13)
 }
@@ -79,7 +80,7 @@ p {
     align-items:center;
     gap:10px;
     margin-bottom:18px;
-    color:var(--gold-dark);
+    color:var(--gold-text);
     font-size:.76rem;
     font-weight:800;
     letter-spacing:.14em;
@@ -375,7 +376,7 @@ p {
     border-bottom:1px solid var(--line)
 }
 .principles article>span {
-    color:var(--gold-dark);
+    color:var(--gold-text);
     font-family:"Manrope", sans-serif;
     font-size:1.15rem
 }
@@ -553,7 +554,7 @@ p {
     font-size:.88rem
 }
 .team-content span {
-    color:var(--gold-dark);
+    color:var(--gold-text);
     font-size:.72rem;
     font-weight:700
 }
@@ -642,7 +643,7 @@ input:focus, textarea:focus, select:focus {
     gap:8px;
     border-radius:10px;
     padding:12px 14px;
-    color:var(--gold-dark);
+    color:var(--gold-text);
     background:rgba(212,177,126,.14);
     font-weight:700;
     font-size:.85rem
@@ -827,7 +828,7 @@ input:focus, textarea:focus, select:focus {
     padding:18px
 }
 .selection-card span {
-    color:var(--gold-dark);
+    color:var(--gold-text);
     font-size:.66rem;
     font-weight:800;
     text-transform:uppercase
@@ -885,7 +886,7 @@ input:focus, textarea:focus, select:focus {
     font-size:.8rem
 }
 .professional-option div>span {
-    color:var(--gold-dark);
+    color:var(--gold-text);
     font-size:.7rem
 }
 .professional-option>b {
