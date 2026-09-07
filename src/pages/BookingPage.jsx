@@ -117,7 +117,10 @@ function BookingPage({
 
                 <main className="booking-page">
                     <section className="shell confirmation">
-            <span className="check">
+            <span
+                className="check"
+                aria-hidden="true"
+            >
               ✓
             </span>
 
@@ -363,7 +366,7 @@ function BookingPage({
                             </span>
                                                     </div>
 
-                                                    <b>✓</b>
+                                                    <b aria-hidden="true">✓</b>
                                                 </label>
                                             )
                                         )}

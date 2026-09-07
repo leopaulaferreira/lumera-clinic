@@ -84,7 +84,7 @@ function HomePage({ onCancel }) {
                             <div className="hero-photo" />
 
                             <div className="floating-card top">
-                                <span>✦</span>
+                                <span aria-hidden="true">✦</span>
 
                                 <div>
                                     <strong>Avaliação personalizada</strong>
@@ -354,7 +354,7 @@ function HomePage({ onCancel }) {
                                 <blockquote
                                     key={testimonial.id ?? testimonial.author}
                                 >
-                                    <b>“</b>
+                                    <b aria-hidden="true">“</b>
                                     <p>{testimonial.text}</p>
                                     <cite>{testimonial.author}</cite>
                                 </blockquote>
