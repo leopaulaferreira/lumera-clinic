@@ -22,20 +22,11 @@ import {
     services,
 } from "../data/clinic";
 
-const currency = new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-});
-
-function getTodayISO() {
-    return new Date().toISOString().split("T")[0];
-}
-
-function formatDate(date) {
-    return new Date(`${date}T12:00:00`).toLocaleDateString(
-        "pt-BR"
-    );
-}
+import {
+    currency,
+    formatDate,
+    getTodayISO,
+} from "../utils/format";
 
 function AdminPage({
                        appointments,

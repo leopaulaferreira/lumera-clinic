@@ -14,28 +14,12 @@ import {
     timeSlots,
 } from "../data/clinic";
 
-const currency = new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-});
-
-function getTodayISO() {
-    return new Date().toISOString().split("T")[0];
-}
-
-function formatDate(date) {
-    return new Date(`${date}T12:00:00`).toLocaleDateString(
-        "pt-BR"
-    );
-}
-
-function formatSpecialties(specialties) {
-    if (Array.isArray(specialties)) {
-        return specialties.join(" • ");
-    }
-
-    return specialties;
-}
+import {
+    currency,
+    formatDate,
+    formatSpecialties,
+    getTodayISO,
+} from "../utils/format";
 
 function BookingPage({
                          appointments,

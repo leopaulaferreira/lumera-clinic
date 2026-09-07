@@ -10,18 +10,10 @@ import {
     testimonials,
 } from "../data/clinic";
 
-const currency = new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-});
-
-function formatSpecialties(specialties) {
-    if (Array.isArray(specialties)) {
-        return specialties.join(" • ");
-    }
-
-    return specialties;
-}
+import {
+    currency,
+    formatSpecialties,
+} from "../utils/format";
 
 function HomePage({ onCancel }) {
     return (
