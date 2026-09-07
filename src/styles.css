@@ -199,6 +199,26 @@ p {
 .desktop-nav a:hover, .link-admin:hover {
     color:var(--gold)
 }
+.menu-toggle {
+    display:none;
+    width:42px;
+    height:42px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:5px;
+    border:1px solid rgba(255,255,255,.24);
+    border-radius:10px;
+    background:transparent
+}
+.menu-toggle span {
+    width:18px;
+    height:2px;
+    background:#fff
+}
+.mobile-nav {
+    display:none
+}
 /* =========================================================
    HERO
    ========================================================= */
@@ -1193,6 +1213,29 @@ td small {
 @media (max-width: 1050px) {
     .desktop-nav {
         display:none
+    }
+    .menu-toggle {
+        display:flex
+    }
+    .link-admin {
+        display:none
+    }
+    .mobile-nav:not([hidden]) {
+        display:flex;
+        flex-direction:column;
+        gap:4px;
+        padding:14px 20px 22px;
+        border-top:1px solid rgba(255,255,255,.1);
+        background:rgba(29,41,36,.98)
+    }
+    .mobile-nav a {
+        padding:12px 4px;
+        color:rgba(255,255,255,.78);
+        font-size:.92rem;
+        font-weight:700
+    }
+    .mobile-nav a:hover {
+        color:var(--gold)
     }
     .hero-grid,
     .intro-grid,
