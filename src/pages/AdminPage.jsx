@@ -1,4 +1,5 @@
 import {
+    useEffect,
     useMemo,
     useState,
 } from "react";
@@ -41,6 +42,18 @@ function AdminPage({
                        onStatusChange,
                        onResetDemo,
                    }) {
+    useEffect(() => {
+        const metaRobots = document.createElement("meta");
+
+        metaRobots.name = "robots";
+        metaRobots.content = "noindex, nofollow";
+        document.head.appendChild(metaRobots);
+
+        return () => {
+            document.head.removeChild(metaRobots);
+        };
+    }, []);
+
     const [query, setQuery] = useState("");
     const [statusFilter, setStatusFilter] =
         useState("Todos");
