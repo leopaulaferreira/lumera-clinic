@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import AdminPage from "./pages/AdminPage";
 import BookingPage from "./pages/BookingPage";
 import HomePage from "./pages/HomePage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 import { demoAppointments } from "./data/clinic";
 
@@ -142,6 +143,11 @@ function App() {
                         onResetDemo={resetDemoAppointments}
                     />
                 }
+            />
+
+            <Route
+                path="*"
+                element={<NotFoundPage />}
             />
         </Routes>
     );
