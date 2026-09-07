@@ -6,6 +6,14 @@ import {
 import { Link } from "react-router-dom";
 
 import Brand from "../components/Brand";
+import {
+    IconCalendar,
+    IconCheck,
+    IconOverview,
+    IconSparkle,
+    IconTeam,
+    IconUsers,
+} from "../components/icons";
 
 import {
     appointmentStatuses,
@@ -137,23 +145,23 @@ function AdminPage({
                         className="active"
                         href="#dashboard"
                     >
-                        ◫ Visão geral
+                        <IconOverview /> Visão geral
                     </a>
 
                     <a href="#agenda">
-                        ◷ Agenda
+                        <IconCalendar /> Agenda
                     </a>
 
                     <a href="#clientes">
-                        ◎ Clientes
+                        <IconUsers /> Clientes
                     </a>
 
                     <a href="#servicos">
-                        ✦ Procedimentos
+                        <IconSparkle /> Procedimentos
                     </a>
 
                     <a href="#equipe">
-                        ♙ Profissionais
+                        <IconTeam /> Profissionais
                     </a>
                 </nav>
 
@@ -199,7 +207,7 @@ function AdminPage({
                     id="dashboard"
                 >
                     <article>
-                        <span>◷</span>
+                        <span><IconCalendar /></span>
 
                         <div>
                             <small>
@@ -217,7 +225,7 @@ function AdminPage({
                     </article>
 
                     <article>
-                        <span>✓</span>
+                        <span><IconCheck /></span>
 
                         <div>
                             <small>
@@ -255,7 +263,7 @@ function AdminPage({
                     </article>
 
                     <article>
-                        <span>◎</span>
+                        <span><IconUsers /></span>
 
                         <div>
                             <small>
